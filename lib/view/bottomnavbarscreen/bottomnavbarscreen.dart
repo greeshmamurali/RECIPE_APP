@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sample_29/utils/constants/color_constants.dart';
+import 'package:sample_29/view/homescreen/homescreen.dart';
 
 class Bottomnavbarscreen extends StatefulWidget {
   const Bottomnavbarscreen({super.key});
@@ -11,9 +12,7 @@ class Bottomnavbarscreen extends StatefulWidget {
 class _BottomnavbarscreenState extends State<Bottomnavbarscreen> {
    int selectin = 0;
     List screens = [
-      Container(
-        color: Colors.green,
-      ),
+     Homescreen(),
       Container(
         color: Colors.red,
       ),
