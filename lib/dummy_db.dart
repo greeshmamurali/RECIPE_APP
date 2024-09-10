@@ -1,3 +1,5 @@
+import 'package:sample_29/utils/constants/image_constants.dart';
+
 class DummyDb {
   static const List details = [
     {
@@ -8,7 +10,7 @@ class DummyDb {
       'title': 'Mastering the Art of Bread Baking',
       'img2':
           'https://images.pexels.com/photos/2103949/pexels-photo-2103949.jpeg?auto=compress&cs=tinysrgb&w=600',
-      'name': 'By John Doe'
+      'name': 'John Doe'
     },
     {
       'rating': '4.3',
@@ -18,7 +20,7 @@ class DummyDb {
       'title': 'How to make sushi at home',
       'img2':
           'https://images.pexels.com/photos/1239288/pexels-photo-1239288.jpeg?auto=compress&cs=tinysrgb&w=600',
-      'name': 'By Samantha'
+      'name': 'Samantha'
     },
     {
       'rating': '4.5',
@@ -28,7 +30,7 @@ class DummyDb {
       'title': 'Ultimate Guide to Pasta Making',
       'img2':
           'https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=600',
-      'name': 'By Maria Clara'
+      'name': 'Maria Clara'
     },
     {
       'rating': '4.8',
@@ -38,7 +40,7 @@ class DummyDb {
       'title': 'Vegan Cooking for Beginners',
       'img2':
           'https://images.pexels.com/photos/1070873/pexels-photo-1070873.jpeg?auto=compress&cs=tinysrgb&w=600',
-      'name': 'By Alex Green'
+      'name': 'Alex Green'
     },
     {
       'rating': '4.6',
@@ -48,7 +50,7 @@ class DummyDb {
       'title': 'Smoothie Recipes for Summer',
       'img2':
           'https://images.pexels.com/photos/1144699/pexels-photo-1144699.jpeg?auto=compress&cs=tinysrgb&w=600',
-      'name': 'By Emma Lee'
+      'name': 'Emma Lee'
     },
     {
       'rating': '4.4',
@@ -58,7 +60,7 @@ class DummyDb {
       'title': 'Simple Soups for Every Season',
       'img2':
           'https://images.pexels.com/photos/410648/pexels-photo-410648.jpeg?auto=compress&cs=tinysrgb&w=600',
-      'name': 'By David Smith'
+      'name': 'David Smith'
     },
     {
       'rating': '4.9',
@@ -68,7 +70,7 @@ class DummyDb {
       'title': 'Gourmet Grilling Tips',
       'img2':
           'https://images.pexels.com/photos/3026800/pexels-photo-3026800.jpeg?auto=compress&cs=tinysrgb&w=600',
-      'name': 'By Julie Martin'
+      'name': 'Julie Martin'
     },
     {
       'rating': '4.2',
@@ -78,7 +80,7 @@ class DummyDb {
       'title': 'Easy Indian Dishes to Make',
       'img2':
           'https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600',
-      'name': 'By Anita Kapoor'
+      'name': 'Anita Kapoor'
     },
     {
       'rating': '4.5',
@@ -88,7 +90,7 @@ class DummyDb {
       'title': 'Healthy Desserts for Every Occasion',
       'img2':
           'https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg?auto=compress&cs=tinysrgb&w=600',
-      'name': 'By Lara Johnson'
+      'name': 'Lara Johnson'
     },
     {
       'rating': '4.1',
@@ -98,7 +100,7 @@ class DummyDb {
       'title': 'Perfect Pizzas at Home',
       'img2':
           'https://images.pexels.com/photos/1337822/pexels-photo-1337822.jpeg?auto=compress&cs=tinysrgb&w=600',
-      'name': 'By Marco Rossi'
+      'name': 'Marco Rossi'
     },
     {
       'rating': '4.7',
@@ -108,45 +110,144 @@ class DummyDb {
       'title': 'The Secrets of French Cuisine',
       'img2':
           'https://images.pexels.com/photos/3669637/pexels-photo-3669637.jpeg?auto=compress&cs=tinysrgb&w=600',
-      'name': 'By Claire Dupont'
+      'name': 'Claire Dupont'
     },
   ];
 
   static const List food = [
     {
-    'img': 'https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg?auto=compress&cs=tinysrgb&w=600',
-    'title': 'Pepper Sweetcorn Ramen',
-    'time': '10 Mins'
-  },
-  {
-    'img': 'https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=600',
-    'title': 'Chicken Biryani',
-    'time': '45 Mins'
-  },
-  {
-    'img': 'https://images.pexels.com/photos/2232/vegetables-italian-pizza-restaurant.jpg?auto=compress&cs=tinysrgb&w=600',
-    'title': 'Vegetarian Pizza',
-    'time': '30 Mins'
-  },
-  {
-    'img': 'https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&w=600',
-    'title': 'Grilled Steak',
-    'time': '20 Mins'
-  },
-  {
-    'img': 'https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=600',
-    'title': 'Spaghetti Carbonara',
-    'time': '25 Mins'
-  },
-  {
-    'img': 'https://images.pexels.com/photos/3535387/pexels-photo-3535387.jpeg?auto=compress&cs=tinysrgb&w=600',
-    'title': 'Caesar Salad',
-    'time': '15 Mins'
-  },
-  {
-    'img': 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600',
-    'title': 'Beef Tacos',
-    'time': '20 Mins'
-  },
+      'img':
+          'https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'title': 'Pepper Sweetcorn Ramen',
+      'time': '10 Mins'
+    },
+    {
+      'img':
+          'https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'title': 'Chicken Biryani',
+      'time': '45 Mins'
+    },
+    {
+      'img':
+          'https://images.pexels.com/photos/2232/vegetables-italian-pizza-restaurant.jpg?auto=compress&cs=tinysrgb&w=600',
+      'title': 'Vegetarian Pizza',
+      'time': '30 Mins'
+    },
+    {
+      'img':
+          'https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'title': 'Grilled Steak',
+      'time': '20 Mins'
+    },
+    {
+      'img':
+          'https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'title': 'Spaghetti Carbonara',
+      'time': '25 Mins'
+    },
+    {
+      'img':
+          'https://images.pexels.com/photos/3535387/pexels-photo-3535387.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'title': 'Caesar Salad',
+      'time': '15 Mins'
+    },
+    {
+      'img':
+          'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'title': 'Beef Tacos',
+      'time': '20 Mins'
+    },
+  ];
+
+  static const List recent = [
+    {
+      'img':
+          'https://images.pexels.com/photos/410648/pexels-photo-410648.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'name': 'Broasted\nChicken',
+      'by': 'By Adriana sahel'
+    },
+    {
+      'img':
+          'https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'name': 'French\nFries',
+      'by': 'By Prajaktha Koli'
+    },
+    {
+      'img':
+          'https://images.pexels.com/photos/566888/pexels-photo-566888.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'name': 'Strawberry',
+      'by': 'By Harshid'
+    },
+  ];
+
+  static const List creators = [
+    {
+      'img':
+          'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'name': 'Adriana\nSahel'
+    },
+    {
+      'img':
+          'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'name': 'Sam\nKrishna'
+    },
+    {
+      'img':
+          'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'name': 'Eldrea\nRebeiro'
+    },
+    {
+      'img':
+          'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'name': 'Stuart\nLiji'
+    },
+    {
+      'img':
+          'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'name': 'Adriana\nSahel'
+    },
+    {
+      'img':
+          'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'name': 'Sam\nKrishna'
+    },
+    {
+      'img':
+          'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'name': 'Eldrea\nRebeiro'
+    },
+    {
+      'img':
+          'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'name': 'Stuart\nLiji'
+    },
+  ];
+
+  static const List Ingredients = [
+    {
+      'img':ImageConstants.Bread,
+      'name':'Bread',
+      'quantity':'200 g'
+    },
+    {
+      'img':ImageConstants.Milk,
+      'name':'Milk',
+      'quantity':'200 g'
+    },
+    {
+      'img':ImageConstants.Bread,
+      'name':'Butter',
+      'quantity':'200 g'
+    },
+     {
+      'img':ImageConstants.Milk,
+      'name':'Vanilla',
+      'quantity':'200 g'
+    },
+     {
+      'img':ImageConstants.Milk,
+      'name':'Egg',
+      'quantity':'200 g'
+    },
   ];
 }
