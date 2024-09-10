@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sample_29/dummy_db.dart';
+import 'package:sample_29/golbal_widgets/customButton.dart';
+import 'package:sample_29/golbal_widgets/customIngredientCard.dart';
 import 'package:sample_29/utils/constants/color_constants.dart';
 import 'package:sample_29/utils/constants/image_constants.dart';
 
@@ -98,32 +100,10 @@ class RecipeDetails extends StatelessWidget {
                     shrinkWrap: true,
                     physics: NeverScrollableScrollPhysics(),
                       itemBuilder: (context, index) {
-                        return Container(
-                          height: 76,
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                              color: ColorConstants.LIGHT_GREY_COLOR.withOpacity(.2),
-                              borderRadius: BorderRadius.circular(12)),
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 16.0,vertical: 12),
-                                child: Row(
-                                  children: [
-                                    ClipRRect(
-                                      borderRadius: BorderRadius.circular(9),
-                                      child: Image.asset(DummyDb.Ingredients[index]['img'],fit: BoxFit.fill,)),
-                                      SizedBox(width: 16,),
-                                      Text(DummyDb.Ingredients[index]['name'],
-                                      style: TextStyle(
-                                        color: Colors.black,
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w600
-                                      ),),
-                                      Spacer(),
-                                      Text(DummyDb.Ingredients[index]['quantity'],
-                                      style: TextStyle(fontSize: 14,color: ColorConstants.LIGHT_GREY_COLOR),)
-                                  ],
-                                ),
-                              ),
+                        return customIngridientCard(
+                          img: DummyDb.Ingredients[index]['img'],
+                          name: DummyDb.Ingredients[index]['name'],
+                          quantity: DummyDb.Ingredients[index]['quantity'],
                         );
                       },
                       separatorBuilder:(context, index) => SizedBox(height: 12,),
@@ -216,21 +196,7 @@ class RecipeDetails extends StatelessWidget {
                 ],
               ),
               Spacer(),
-              Container(
-                //height: 38,
-                decoration: BoxDecoration(
-                    color: ColorConstants.PRIMARY_COLOR,
-                    borderRadius: BorderRadius.circular(5)),
-                child: Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 13, vertical: 4),
-                  child: Text(
-                    'Follow',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
-              )
+              customButton(data: 'Follow',)
             ],
           )
         ],
@@ -238,3 +204,6 @@ class RecipeDetails extends StatelessWidget {
     );
   }
 }
+
+
+
