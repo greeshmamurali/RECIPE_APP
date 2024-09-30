@@ -224,30 +224,36 @@ class DummyDb {
   ];
 
   static const List Ingredients = [
-    {
-      'img':ImageConstants.Bread,
-      'name':'Bread',
-      'quantity':'200 g'
-    },
-    {
-      'img':ImageConstants.Milk,
-      'name':'Milk',
-      'quantity':'200 g'
-    },
-    {
-      'img':ImageConstants.Bread,
-      'name':'Butter',
-      'quantity':'200 g'
-    },
-     {
-      'img':ImageConstants.Milk,
-      'name':'Vanilla',
-      'quantity':'200 g'
-    },
-     {
-      'img':ImageConstants.Milk,
-      'name':'Egg',
-      'quantity':'200 g'
-    },
+    {'img': ImageConstants.Bread, 'name': 'Bread', 'quantity': '200 g'},
+    {'img': ImageConstants.Milk, 'name': 'Milk', 'quantity': '200 g'},
+    {'img': ImageConstants.Bread, 'name': 'Butter', 'quantity': '200 g'},
+    {'img': ImageConstants.Milk, 'name': 'Vanilla', 'quantity': '200 g'},
+    {'img': ImageConstants.Milk, 'name': 'Egg', 'quantity': '200 g'},
   ];
+
+ static const List recipes = [
+  {
+    'img': 'https://images.pexels.com/photos/769969/pexels-photo-769969.jpeg?auto=compress&cs=tinysrgb&w=600',
+    'rating': '5.0',
+    'name': 'How to make Italian Spaghetti at home',
+    'ingredients': '12',
+    'time': '40 min'
+  },
+  {
+    'img': 'https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=600',
+    'rating': '4.8',
+    'name': 'Easy Chicken Curry Recipe',
+    'ingredients': '10',
+    'time': '50 min'
+  },
+  {
+    'img': 'https://images.pexels.com/photos/5938/food-salad-healthy-vegetables.jpg?auto=compress&cs=tinysrgb&w=600',
+    'rating': '4.7',
+    'name': 'Healthy Vegetable Salad',
+    'ingredients': '8',
+    'time': '20 min'
+  },
+  
+];
+
 }

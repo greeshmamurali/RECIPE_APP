@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:hugeicons/hugeicons.dart';
 import 'package:sample_29/utils/constants/color_constants.dart';
 import 'package:sample_29/view/bookmarks_screen/bookmarks_screen.dart';
+import 'package:sample_29/view/create_recipe_screen/create_recipe_screen.dart';
 import 'package:sample_29/view/homescreen/homescreen.dart';
+import 'package:sample_29/view/notifications/notifications.dart';
+import 'package:sample_29/view/profile_screen/profile_screen.dart';
 
 class Bottomnavbarscreen extends StatefulWidget {
   const Bottomnavbarscreen({super.key});
@@ -11,25 +15,26 @@ class Bottomnavbarscreen extends StatefulWidget {
 }
 
 class _BottomnavbarscreenState extends State<Bottomnavbarscreen> {
-   int selectin = 0;
-    List screens = [
-     Homescreen(),
-     //
-      BookmarksScreen(),
-      Container(
-        color: Colors.brown,
-      ),
-      Container(
-        color: Colors.orange,
-      ),
-    ];
+  int selectin = 0;
+  List screens = [
+    Homescreen(),
+    //
+    BookmarksScreen(),
+    Notifications(),
+    ProfileScreen()
+  ];
   @override
   Widget build(BuildContext context) {
-   
     return Scaffold(
       body: screens[selectin],
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => CreateRecipeScreen(),
+              ));
+        },
         backgroundColor: ColorConstants.PRIMARY_COLOR,
         shape: CircleBorder(),
         child: Icon(
@@ -41,16 +46,15 @@ class _BottomnavbarscreenState extends State<Bottomnavbarscreen> {
       bottomNavigationBar: BottomNavigationBar(
           onTap: (value) {
             selectin = value;
-            setState(() {
-              
-            });
+            setState(() {});
           },
           currentIndex: selectin,
           type: BottomNavigationBarType.fixed,
           backgroundColor: Colors.white,
           items: [
             BottomNavigationBarItem(
-                icon: Icon(Icons.home_outlined),
+                //icon: Icon(Icons.home_outlined),
+                icon: HugeIcon(icon: HugeIcons.strokeRoundedHouse01, color: ColorConstants.PRIMARY_COLOR),
                 activeIcon: Icon(Icons.home),
                 label: ''),
             BottomNavigationBarItem(

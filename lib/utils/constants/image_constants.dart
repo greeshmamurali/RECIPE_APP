@@ -5,4 +5,6 @@ class ImageConstants {
 
   static const Bread = 'assets/images/Icon - Noodles.png';
   static const Milk = 'assets/images/Icon - Noodles (1).png';
+  static const Serves = 'assets/images/Icon - Serves.png';
+  static const cooktime = 'assets/images/Icon - Cook Time.png';
 }

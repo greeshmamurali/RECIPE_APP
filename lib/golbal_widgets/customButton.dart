@@ -17,10 +17,12 @@ class customButton extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 13, vertical: 4),
         child: InkWell(
           onTap: onCardTap,
-          child: Text(
-            '${data}',
-            textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.white),
+          child: Center(
+            child: Text(
+              '${data}',
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.white),
+            ),
           ),
         ),
       ),

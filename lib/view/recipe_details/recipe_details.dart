@@ -104,6 +104,7 @@ class RecipeDetails extends StatelessWidget {
                           img: DummyDb.Ingredients[index]['img'],
                           name: DummyDb.Ingredients[index]['name'],
                           quantity: DummyDb.Ingredients[index]['quantity'],
+                          //arrowValue: true,
                         );
                       },
                       separatorBuilder:(context, index) => SizedBox(height: 12,),
