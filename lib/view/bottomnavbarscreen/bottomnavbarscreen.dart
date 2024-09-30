@@ -54,7 +54,7 @@ class _BottomnavbarscreenState extends State<Bottomnavbarscreen> {
           items: [
             BottomNavigationBarItem(
                 //icon: Icon(Icons.home_outlined),
-                icon: HugeIcon(icon: HugeIcons.strokeRoundedHouse01, color: ColorConstants.PRIMARY_COLOR),
+                icon: Icon(Icons.home_outlined, color: ColorConstants.PRIMARY_COLOR),
                 activeIcon: Icon(Icons.home),
                 label: ''),
             BottomNavigationBarItem(
